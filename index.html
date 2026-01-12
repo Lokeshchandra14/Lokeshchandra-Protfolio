@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lokesh Chandra | Data Analyst Portfolio</title>
+
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -12,31 +13,67 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background: #0f172a;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.2rem;
     }
+
     header p {
       margin: 8px 0;
       font-size: 1.1rem;
       opacity: 0.9;
     }
+
     section {
       max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
+
     h2 {
       color: #0f172a;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 6px;
     }
+
+    /* ---------- SLIDESHOW ---------- */
+    .slideshow-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .fade {
+      animation: fadeEffect 1.5s;
+    }
+
+    @keyframes fadeEffect {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    /* ---------- SKILLS ---------- */
     .skills span {
       display: inline-block;
       background: #e2e8f0;
@@ -45,6 +82,8 @@
       border-radius: 6px;
       font-size: 0.9rem;
     }
+
+    /* ---------- CARDS ---------- */
     .card {
       background: #fff;
       padding: 20px;
@@ -52,41 +91,61 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #0f172a;
       color: #fff;
     }
+
     a {
       color: #2563eb;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Yedire Lokesh Chandra</h1>
   <p>Aspiring Data Analyst | Power BI • Python • SQL • Excel</p>
+  <p>Hyderabad, India – 500077</p>
   <p>
-    Hyderabad, India, 500077.
-  </p>
-  <p>
-    <a href="mailto:yedire.lokeshchandra6@gmail.com">Email: yedire.lokeshchandra6@gmail.com</a> | 
-    <a href="https://www.linkedin.com/in/lokesh-chandra-yedire-70b862274/">LinkedIn</a> | 
-    <a href="https://drive.google.com/file/d/1CVGlZAV8yLHkaHgQLzBQB-oTeqLO9fyM/view" target="_blank"> Resume</a>
+    <a href="mailto:yedire.lokeshchandra6@gmail.com">Email</a> |
+    <a href="https://www.linkedin.com/in/lokesh-chandra-yedire-70b862274/" target="_blank">LinkedIn</a> |
+    <a href="https://drive.google.com/file/d/1CVGlZAV8yLHkaHgQLzBQB-oTeqLO9fyM/view" target="_blank">Resume</a>
   </p>
 </header>
+
+<!-- ===== SLIDESHOW ===== -->
+<div class="slideshow-container">
+
+  <div class="slide fade">
+    <img src="https://media.licdn.com/dms/image/v2/D562DAQEBvg1eGh8quQ/profile-treasury-image-shrink_800_800/B56ZkAlkoLHUAc-/0/1756651489099?e=1768842000&v=beta&t=BYJjTmkeF4vVkQ7mqtqqxwAMBE2mViC12_n_tYNJ4yw" alt="Lokesh Chandra">
+  </div>
+
+  <div class="slide fade">
+    <img src="images/sales-analysis.jpg" alt="Sales Analysis Project">
+  </div>
+
+  <div class="slide fade">
+    <img src="images/python-project.jpg" alt="Python Data Project">
+  </div>
+
+</div>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I am an aspiring Data Analyst with hands-on experience in data cleaning, analysis, and visualization.
-    I enjoy converting raw data into actionable insights that help businesses make informed decisions.
+    I am an aspiring Data Analyst with hands-on experience in data cleaning,
+    analysis, and visualization. I enjoy converting raw data into actionable
+    insights that help businesses make informed decisions.
   </p>
 </section>
 
@@ -109,25 +168,29 @@
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>Power BI – Supply Chain & Sales Dashboard</h3>
+    <h3>IKARUS 2025 TECH FEST</h3>
     <p>
-      Interactive dashboard tracking sales, profit, shipments, and regional performance using DAX and Power Query.
+     Addressed the gathering as Convener during the inauguration of IKARUS 2K25 – National Technical Fest, 
+      showcasing leadership, public speaking, and coordination skills.
     </p>
   </div>
 
   <div class="card">
     <h3>Airline Reservation Management System</h3>
     <p>
-      Web-based airline booking system with authentication and admin controls using Django and SQLite.
+      Web-based airline booking system with authentication and admin controls
+      using Django and SQLite.
     </p>
   </div>
 
   <div class="card">
     <h3>Personal Voice Assistant (Python)</h3>
     <p>
-      Python-based voice assistant capable of opening apps, web search, emailing, and note-taking.
+      Python-based voice assistant capable of opening applications, web search,
+      emailing, and note-taking.
     </p>
   </div>
+
 </section>
 
 <section>
@@ -142,12 +205,15 @@
     <h3>Industrial Training – NSIC</h3>
     <p>Hands-on exposure to industry-level software development and real-time projects.</p>
   </div>
+
 </section>
 
 <section>
   <h2>Education</h2>
-  <p><strong>B.Tech – Computer Science (Data Science)</strong><br>KG Reddy College of Engineering & Technology</p>
-  <p><strong>Diploma – Computer Engineering</strong><br>TRR College of Technology</p>
+  <p><strong>B.Tech – Computer Science (Data Science)</strong><br>
+     KG Reddy College of Engineering & Technology</p>
+  <p><strong>Diploma – Computer Engineering</strong><br>
+     TRR College of Technology</p>
 </section>
 
 <section>
@@ -163,6 +229,25 @@
 <footer>
   <p>© 2026 Yedire Lokesh Chandra | Data Analyst Portfolio</p>
 </footer>
+
+<!-- ===== SLIDESHOW SCRIPT ===== -->
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // 3 seconds
+  }
+</script>
 
 </body>
 </html>

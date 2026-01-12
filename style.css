@@ -1,0 +1,29 @@
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: .4}
+  to {opacity: 1}
+}
